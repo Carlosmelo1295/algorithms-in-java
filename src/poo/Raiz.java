@@ -7,11 +7,11 @@ public class Raiz {
 	ArrayList<Integer> arrayAsc = new ArrayList<>();
 	ArrayList<Integer> resultado = new ArrayList<>();
 
-	ArrayList<Integer> calcular(int valor) {
+	ArrayList<Integer> calcular(int valor, int parimpa) {
 
 		for (int i = valor; i >= 0; i--) {
 
-			if (i % 2 != 0) {
+			if (i % 2 != parimpa) {
 				arrayDesc.add(i);
 			}
 
@@ -19,7 +19,7 @@ public class Raiz {
 
 		for (int j = 0; j <= valor; j++) {
 
-			if (j % 2 != 0) {
+			if (j % 2 != parimpa) {
 				arrayAsc.add(j);
 
 			}
