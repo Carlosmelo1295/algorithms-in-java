@@ -7,7 +7,7 @@ public class RaizTest {
 	public static void main(String[] args) {
 		Raiz raiz = new Raiz();
 		
-		raiz.calcular(64, 1); // 1 para números Pares 0 para ímpares.
+		raiz.calcular(27, 0); // 1 para números Pares, 0 para ímpares.
 
 	}
 }
