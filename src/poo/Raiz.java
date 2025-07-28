@@ -3,19 +3,19 @@ package poo;
 import java.util.ArrayList;
 
 public class Raiz {
-	ArrayList<Integer> arrayDesc = new ArrayList<>();
+	//ArrayList<Integer> arrayDesc = new ArrayList<>();
 	ArrayList<Integer> arrayAsc = new ArrayList<>();
 	ArrayList<Integer> resultado = new ArrayList<>();
 
 	ArrayList<Integer> calcular(int valor, int parimpa) {
 
-		for (int i = valor; i >= 0; i--) {
-
-			if (i % 2 != parimpa) {
-				arrayDesc.add(i);
-			}
-
-		}
+//		for (int i = valor; i >= 0; i--) {
+//
+//			if (i % 2 != parimpa) {
+//				arrayDesc.add(i);
+//			}
+//
+//		}
 
 		for (int j = 0; j <= valor; j++) {
 
@@ -26,13 +26,13 @@ public class Raiz {
 
 		}
 
-		int fistRes = arrayDesc.getFirst() - arrayAsc.getFirst();
+		int fistRes = valor - arrayAsc.getFirst();
 		resultado.add(fistRes);
-		System.out.println(arrayDesc.getFirst() + " - " + arrayAsc.getFirst() + " = " + fistRes);
+		System.out.println(valor + " - " + arrayAsc.getFirst() + " = " + fistRes);
 
 		for (int k = 1; k < valor; k++) {
 
-			arrayDesc.removeFirst();
+			//arrayDesc.removeFirst();
 			arrayAsc.removeFirst();
 			if (resultado.size() >= 1) {
 				int somaArr = resultado.getFirst() - arrayAsc.getFirst();
@@ -49,7 +49,7 @@ public class Raiz {
 
 		}
 
-		return arrayDesc;
+		return resultado;
 	}
 
 }
